@@ -361,18 +361,12 @@ addEventListener("keydown", (e) => {
 
 
    let input = document.getElementById("input");
-const arr = [];
+
 
 addEventListener("keydown", (text) => {
-    if (text.key === "Backspace") {
-        
-        arr.pop();
-    }  else {
-       
-        arr.push(text.key);
-    }
+ 
 
-    input.innerHTML = arr.join(""); // Join array to form a string
+    input.innerHTML = text.key ; // Join array to form a string
 });
 
 

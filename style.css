@@ -14,6 +14,15 @@
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+    background:
+    radial-gradient(circle, transparent 20%, slategray 20%,
+      slategray 80%, transparent 80%, transparent),
+    radial-gradient(circle, transparent 20%, slategray 20%,
+      slategray 80%, transparent 80%, transparent) 50px 50px,
+    linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+  background-color: slategray;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
   }
 
   .title{
@@ -23,7 +32,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-color: grey;
+color: white;
 font-family: cursive;
   }
  
@@ -38,6 +47,8 @@ font-family: cursive;
     gap: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid rgb(255, 255, 255);
+    border-radius: 0 10px;
+    border-top: none;
    
   }
   
@@ -83,7 +94,7 @@ font-family: cursive;
     font-family: monospace;
     margin-bottom: 20px;
     font-size: 20px;
-   
+   outline: none;
     
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -99,5 +110,17 @@ font-family: cursive;
     width: 100px;
   }
   
+
+  #input{
+    text-align: center;
+    color: white;
+font-size: 2rem;
+background-color: rgb(92, 92, 201);
+text-transform: uppercase;
+border-radius: 5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border:1px solid white;
+border-bottom: none;
+  }
 
   
